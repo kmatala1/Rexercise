@@ -1,0 +1,25 @@
+---
+title: "Coding Problem 5/13"
+author: "Kayli Matala"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Problem: Write a repeat loop containing five random numbers and have the loop repeat itself exactly ten times before it stops.**  
+  
+  
+```{r}
+K<-sample(1:100,5)
+K
+num <- 1
+repeat {
+print(K)
+num = num+1
+if (num >10){
+break
+}
+}
+```
