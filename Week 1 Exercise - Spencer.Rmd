@@ -1,0 +1,23 @@
+---
+title: "Week 1 Exercise"
+author: "Matthew Spencer"
+date: "5/13/2019"
+output: html_document
+---
+
+```{r}
+#Problem: Write a repeat loop containing five random numbers and have the loop repeat itself exactly ten times before it stops.
+
+set.seed(31415)
+v <- sample(1:10, 5)
+cnt <- 2
+
+repeat {
+  print(v)
+  cnt <- cnt+1
+  
+  if(cnt >11) {
+    break
+  }
+}
+```
